@@ -1,3 +1,11 @@
 #employeesOut {
     list-style-type: none;
 }
+
+h1 {
+    text-align: center;
+}
+
+#left {
+    text-align: right;
+}

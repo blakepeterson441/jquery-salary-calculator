@@ -1,4 +1,4 @@
-$( document ).ready(onReady);
+$(document).ready(onReady);
 
 let employees = [];
 
@@ -24,13 +24,21 @@ function onReady() {
 
 function showEmployees() {
     console.log('in showEmployees');
-    let el = $('#employeesOut');
+    let el = $('#tableBody');
     // empty our output element
     el.empty();
     // loop through the inventory
     for (let i = 0; i < employees.length; i++) {
         // append each item to the DOM
-        el.append(`<li>${employees[i].first} ${employees[i].last} ${employees[i].id} ${employees[i].title} ${employees[i].salary}</li>`);
+        el.append(
+            `<tr>
+                <th>${employees[i].first}</th>
+                <th>${employees[i].last}</th>
+                <th>${employees[i].id}</th>
+                <th>${employees[i].title}</th>
+                <th>${employees[i].salary}</th>
+            </tr>`
+
+        );
     } //end for
 }
-
