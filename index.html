@@ -4,25 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="jQuery.js"></script>
-    <script src="client.js"></script>
+    <script src="vendor/jQuery.js"></script>
+    <script src="scripts/client.js"></script>
+    <link rel="stylesheet" href="vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="scripts/style.css">
     <title>Weekend Challenge #1</title>
 </head>
 <body>
     <h1>Salary Calculator</h1>
     <h3>Add Employee</h3>
     <div id="inputDiv">
-        <input type="text" placeholder="First Name" id="firstNameIn">
-        <input type="text" placeholder="Last Name" id="lastNameIn">
+        <input type="text" placeholder="First Name" id="firstIn">
+        <input type="text" placeholder="Last Name" id="lastIn">
         <input type="text" placeholder="ID" id="idIn">
         <input type="text" placeholder="Title" id="titleIn">
-        <input type="text" placeholder="Annual Salary" id="annualSalaryIn">
+        <input type="text" placeholder="Annual Salary" id="salaryIn">
         <button id="addEmployeeButton">Add Employee</button>
     </div>
     <h3>Employees</h3>
-    <ul>
-        <li></li>
-    </ul>
+        <div id="outputDiv">
+              <ul id="employeesOut">
+
+             </ul>
+        </div>
     <h3>Total Monthly: $</h3>
 </body>
 </html>
