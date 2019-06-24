@@ -13,3 +13,7 @@ h1 {
 #addEmployeeButton {
     float: right;
 }
+
+.dangerZone {
+    background-color: firebrick;
+}
