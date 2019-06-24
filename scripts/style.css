@@ -6,9 +6,10 @@ h1 {
     text-align: center;
 }
 
-#left {
+#total {
     text-align: right;
 }
+
 #addEmployeeButton {
     float: right;
 }

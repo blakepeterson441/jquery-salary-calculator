@@ -1,10 +1,10 @@
 $(document).ready(onReady);
-
+// declare empty array
 let employees = [];
 
 function addEmployee() {
     console.log('in addEmployee');
-
+    // setting values
     let newEmployee = {
         first: $('#firstIn').val(),
         last: $('#lastIn').val(),
@@ -13,12 +13,15 @@ function addEmployee() {
         salary: $('#salaryIn').val()
     }
     console.log('adding:', newEmployee);
+    // push employees into array
     employees.push(newEmployee);
+    // call function
     showEmployees();
 }
 
 function onReady() {
     console.log('addEmployees');
+    // add employee on button click
     $('#addEmployeeButton').on('click', addEmployee);
 }
 
