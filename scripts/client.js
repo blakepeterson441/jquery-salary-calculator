@@ -12,6 +12,12 @@ function addEmployee() {
         title: $('#titleIn').val(),
         salary: $('#salaryIn').val()
     }
+    $('#firstIn').val('');
+    $('#lastIn').val('');
+    $('#idIn').val('');
+    $('#titleIn').val('');
+    $('#salaryIn').val('');
+
     console.log('adding:', newEmployee);
     // push employees into array
     employees.push(newEmployee);
