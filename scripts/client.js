@@ -29,6 +29,15 @@ function onReady() {
     console.log('addEmployees');
     // add employee on button click
     $('#addEmployeeButton').on('click', addEmployee);
+    $('#tableBody').on('click', '.deleteBtn', handleDelete)
+}
+
+function handleDelete(){
+    console.log('clicked delete');
+    //remove item from DOM with delete button
+    $(this).closest('tr').remove();
+    // could also use this..
+    // $(this).parent().parent().remove();
 }
 
 function showEmployees() {
@@ -46,6 +55,7 @@ function showEmployees() {
                 <td>${employees[i].id}</td>
                 <td>${employees[i].title}</td>
                 <td>${employees[i].salary}</td>
+                <td><button class="btn btn-danger deleteBtn">DELETE</button></td>
             </tr>`
 
         );
