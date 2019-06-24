@@ -41,11 +41,11 @@ function showEmployees() {
         // append each item to the DOM
         el.append(
             `<tr>
-                <th>${employees[i].first}</th>
-                <th>${employees[i].last}</th>
-                <th>${employees[i].id}</th>
-                <th>${employees[i].title}</th>
-                <th>${employees[i].salary}</th>
+                <td>${employees[i].first}</td>
+                <td>${employees[i].last}</td>
+                <td>${employees[i].id}</td>
+                <td>${employees[i].title}</td>
+                <td>${employees[i].salary}</td>
             </tr>`
 
         );
